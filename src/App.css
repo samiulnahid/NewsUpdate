@@ -36,3 +36,51 @@
     transform: rotate(360deg);
   }
 }
+
+.nav_icon {
+  width: 35px;
+  height: 35px;
+  padding: 7px;
+  text-align: center;
+  border: 1px solid #ffffff;
+  font-size: 18px;
+  border-radius: 100%;
+
+  line-height: 34px;
+  color: #888;
+}
+
+.fb-icon:hover {
+  color: #ffffff;
+  background-color: #086ab4;
+}
+
+.youtube-icon:hover {
+  color: #ffffff;
+  background-color: red;
+}
+
+.twitter-icon:hover {
+  color: #ffffff;
+  background-color: #086ab4;
+}
+
+.instra-icon:hover {
+  color: #ffffff;
+  background-color: #ff0050;
+}
+
+.topNav-btn {
+  color: #086ab4;
+  border: 1px solid #888;
+  font-size: 13px;
+  padding: 4px 0;
+  margin-right: -3px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: white;
+}
+
+.topNav-btn:hover {
+  background-color: rgb(238, 230, 230);
+}

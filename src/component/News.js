@@ -37,10 +37,10 @@ const News = (props) => {
         setLoading(true)   
         let data = await fetch(url);
 
-        // props.setProgresses(30);
+        props.setProgress(30);
         let parsedData = await data.json();
 
-        // props.setProgresses(70);
+        props.setProgress(70);
 
         setArticles(parsedData.articles)
         setTotalResults(parsedData.totalResults)
@@ -48,14 +48,14 @@ const News = (props) => {
 
         console.log(parsedData);
         
-    //    props.setProgresses(100);
+       props.setProgress(100);
     }
 
 
 
     ///(componentDidMount()) j kaj korse class component a.. function component a ta (useEffect) korbe
     useEffect(() => {
-        // document.title =`${capitalizeFirstLetter (props.category)} - Newsmonky`;
+        document.title =`${capitalizeFirstLetter (props.category)} - Newsmonky`;
         updatenews();
         
     }, [])
