@@ -5,9 +5,6 @@ import PropTypes from 'prop-types'
 import InfiniteScroll from "react-infinite-scroll-component";
 
 
-
-
-
 const News = (props) => {
 
     
@@ -88,7 +85,7 @@ const News = (props) => {
         return (
             <>
             
-                <h2 className="text-center " style={{marginTop:"90px" }}>tops   {capitalizeFirstLetter (props.category)} Headline </h2>
+                <h2 className="text-center " style={{marginTop:"30px",marginBottom:"30px" }}>tops   {capitalizeFirstLetter (props.category)} Headline </h2>
 
                 {/* niser sentance ar mane holo jodi (this.state.loading) true hoi ta hole spinner dekhabe noile dekhabe na. */}
                {loading && <Spinner/>} 
@@ -118,28 +115,7 @@ const News = (props) => {
                     </div>
                 </InfiniteScroll>
                 
-                {/* <div className="container d-flex justify-content-between">
-                      <button  
-                            type="button" 
-                            disabled = {this.state.page<=1? true : false}
-                            onClick={this.handlePreviousClick} 
-                            className="btn btn-dark"
-                        >
-                            &larr; Previous
-                        </button>
-
-                       <button
-                            type="button" 
-                            //  disabled = {this.state.page>=1? true : false}
-                            onClick={this.handleNextClick} 
-                             disabled = {(this.state.page+1) > Math.ceil(this.state.totalResults/props.pageSize)}
-                            className="btn btn-dark"
-                        >
-                            Next &rarr;
-                        </button>
-
-                </div> */}
-                
+       
             </>
         )
     
